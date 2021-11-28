@@ -25,12 +25,6 @@
       "clasificacion": "Comedia"
     },
     {
-      "id": 7,
-      "nombre": "Las Hurdes",
-      "director": "Luis Buñuel",
-      "clasificacion": "Documental"
-    },
-    {
       "id": 8
     },
     {
@@ -40,7 +34,7 @@
       "id": 9
     },
     {
-      "nombre": "Sagan",
+      "nombre": "Rodriguez",
       "director": "M. Night Shyamalan",
       "clasificacion": "Drama",
       "id": 10
@@ -50,6 +44,12 @@
       "director": "M. Night Shyamalan",
       "clasificacion": "Drama",
       "id": 11
+    },
+    {
+      "nombre": "Hercules",
+      "director": "lucas",
+      "clasificacion": "Drama",
+      "id": 12
     }
   ],
   "clasificaciones": [
