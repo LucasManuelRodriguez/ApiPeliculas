@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="box-cards">
         <div v-for="pelicula in peliculas" :key="pelicula.id" class="card" style="width: 18rem;">
-            <h2>{{pelicula.nombre}}</h2>
+            <img :src="pelicula.image" class="card-img-top" alt="pelicula">
             <div class="card-body">
-                <h5>{{pelicula.director}}</h5>
-                <p class="card-text">{{pelicula.clasificacion}}</p>
+                <h5 class="card-title">{{pelicula.nombre}}</h5>
+                <p class="card-text">{{pelicula.description}}</p>
             </div>
         </div>
     </div>
@@ -38,5 +38,10 @@ export default {
 </script>
 
 <style>
+.box-cards{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
 </style>
