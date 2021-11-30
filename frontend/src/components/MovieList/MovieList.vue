@@ -26,7 +26,6 @@ export default {
         },
         removeMovie(index){
             this.movies.splice(index,1);
-            this.newMovie={};
         }
     },
 }
