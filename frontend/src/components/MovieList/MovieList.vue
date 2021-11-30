@@ -16,6 +16,7 @@
 </template>
 
 <script>
+
 export default {
     data(){
         return{
@@ -43,7 +44,8 @@ export default {
             this.movies[this.indexToUpdate]= this.newMovie;
             this.newMovie={};
             this.mode='add';
-        }
+        },
+        
     },
 }
 </script>

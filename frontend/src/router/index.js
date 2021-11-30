@@ -2,6 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+import CreateList from '../components/MovieList/CreateList.vue';
+import  EditList  from "../components/MovieList/EditList.vue";
+import RemoveList from '../components/MovieList/RemoveList.vue';
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,6 +13,21 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/create',
+    name: 'CreateList',
+    component: CreateList
+  },
+  {
+    path: '/edit',
+    name: 'EditList',
+    component: EditList
+  },
+  {
+    path: '/remove',
+    name: 'RemoveList',
+    component: RemoveList
   },
   {
     path: '/about',
