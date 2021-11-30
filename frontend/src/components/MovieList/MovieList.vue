@@ -20,7 +20,9 @@ export default {
     },
     methods:{
         addMovie(){
-            this.movies.push(this.newMovie);
+            if(!this.newMovie.title) return;
+            this.movies = [...this.movies, this.newMovie];
+            this.newMovie = {};
         },
     },
 }
