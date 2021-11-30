@@ -4,8 +4,9 @@
       <ul>
           <li v-for="(movie, index) in movies" :key='index'>{{movie.title}}</li>
       </ul>
-      <input type="text" v-model="newMovie">
-      <p>{{newMovie}}</p>
+      <input type="text" v-model="newMovie.title">
+      <button @click="addMovie">Add</button>
+      <p>{{newMovie.title}}</p>
   </div>
 </template>
 
@@ -13,10 +14,15 @@
 export default {
     data(){
         return{
-            newMovie:'',
+            newMovie:{},
             movies:[{title:'Batman'},{title:'Sherk'}],
-        }
-    }
+        };
+    },
+    methods:{
+        addMovie(){
+            this.movies.push(this.newMovie);
+        },
+    },
 }
 </script>
 
