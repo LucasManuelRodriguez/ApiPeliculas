@@ -2,7 +2,7 @@
   <div>
       <h1>Lista de Pelis</h1>
       <ul>
-          <li v-for="(movie, index) in movies" :key='index'>{{movie.title}}</li>
+          <li v-for="(movie, index) in movies" :key='index'>{{movie.title}}<button @click="removeMovie(index)">Delete</button></li>
       </ul>
       <input type="text" v-model="newMovie.title">
       <button @click="addMovie">Add</button>
@@ -24,6 +24,10 @@ export default {
             this.movies = [...this.movies, this.newMovie];
             this.newMovie = {};
         },
+        removeMovie(index){
+            this.movies.splice(index,1);
+            this.newMovie={};
+        }
     },
 }
 </script>
