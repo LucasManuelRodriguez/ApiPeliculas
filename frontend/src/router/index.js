@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+import Listar from '../components/MovieList/Listar.vue';
 import CreateList from '../components/MovieList/CreateList.vue';
 import  EditList  from "../components/MovieList/EditList.vue";
 import RemoveList from '../components/MovieList/RemoveList.vue';
@@ -18,6 +19,11 @@ const routes = [
     path: '/create',
     name: 'CreateList',
     component: CreateList
+  },
+  {
+    path: '/lista',
+    name: 'Listar',
+    component: Listar
   },
   {
     path: '/edit',
