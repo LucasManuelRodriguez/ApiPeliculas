@@ -38,6 +38,9 @@ export default {
 </script>
 
 <style>
+.card{
+        margin-bottom: 2%;
+}
 .box-cards{
     display:flex;
     flex-flow: row wrap;
